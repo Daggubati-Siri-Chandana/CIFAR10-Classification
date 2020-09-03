@@ -26,6 +26,7 @@ Drawbacks of BVOW Classification:
 
 We finally use CNN classifier. The Convolution neural network contains 6 Convolution layers and two fully connected layers. Then each convolution layer is followed by a batch normalization layer. For each pair of convolutional layers, we have max-pooling layers to reduce the spatial size of output, thereby reducing the computational cost. A max-pooling layer is followed by a dropout layer of 20% to bring the regularization effect.
  
+<p align='center'><img src='https://github.com/Daggubati-Siri-Chandana/CIFAR10-Classification/blob/master/CIFAR10_CNN/architechture.png' width='300'></p>
 
 We used adaptive learning rate algorithm RMSProp with learning rate as 0.001 and rho value 0.9, batch size of 128, and 50 epochs. We then computed cross- entropy loss. We used the early stopping and checkpoints mechanism to save the best model.
 A plot of accuracy and loss function for training and validation.We finally achieved 97% training accuracy and 84% validation accuracy on 50 epochs. I took 4.5 hours to train the network on CPU with 8 GB RAM and Intel i5 processor.
